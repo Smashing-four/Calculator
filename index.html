@@ -6,7 +6,7 @@
 
   <title id="pageTitle">Kalkulačka kariet Smashing Four - Výpočet Kariet a Zlata | S4 Klan SK&CZE</title>
   
-  <meta name="description" content="Presná kalkulačka kariet a zlata pre hru Smashing Four. Zistite, koľko kariet a zlata potrebujete na upgrade bežných, vzácnych a epických hrdinov až na úroveň 25.">
+  <meta name="description" content="Presná kalkulačka kariet a zlata pre hru Smashing Four. Zistite, koľko kariet a zlata potrebujete na upgrade bežných, vzácnych a epických hrdinov až na úroveň 27.">
   
   <meta name="keywords" content="Smashing Four, kalkulačka kariet, kalkulačka zlata, hrdinovia, upgrade, levelovanie, bežný, vzácny, epický, výpočet, koľko kariet, koľko zlata, Smashing Four calculator, card calculator, gold calculator, hero upgrade, level up, common, rare, epic, game tool, S4">
 
@@ -31,7 +31,7 @@
       border-radius: 12px;
       box-shadow: 0 0 25px rgba(0, 150, 255, 0.4);
       border: 1px solid rgba(0, 150, 255, 0.3);
-      position: relative; /* Pre umiestnenie vlajok */
+      position: relative;
     }
 
     h1 {
@@ -89,19 +89,19 @@
       background: #0A1931;
       border: 1px solid #00BFFF;
       border-radius: 8px;
-      font-size: 14px; /* Default font size, adjusted by JS */
+      font-size: 14px;
       min-height: 80px;
       color: #E0FFFF;
       box-shadow: inset 0 0 5px rgba(0, 191, 255, 0.3);
-      white-space: normal; /* Umožňuje zalomenie riadkov */
-      line-height: 1.4; /* Zlepšuje čitateľnosť, ak je viac riadkov */
+      white-space: normal;
+      line-height: 1.4;
     }
 
     .error {
       color: #FF6B6B;
       display: block;
       margin-bottom: 10px;
-      white-space: normal; /* Error správy vždy môžu mať zalomenie riadkov */
+      white-space: normal;
     }
 
     .logo-container {
@@ -109,16 +109,13 @@
       margin-bottom: 20px;
     }
 
-    /* SEO OPTIMIZATION: Popis obrázka pre vyhľadávače */
     .logo-container img {
       max-width: 80%;
       height: auto;
       display: block;
       margin: 0 auto;
-      /* Alt text je v HTML, nie v CSS */
     }
 
-    /* Spoločné štýly pre oba prepínače jazykov */
     .language-switcher {
       position: absolute;
       top: 15px;
@@ -158,11 +155,10 @@
     footer {
       text-align: center;
       margin-top: 40px;
-      font-size: 10px; /* Menšie písmo */
+      font-size: 10px;
       color: #7FFFD4;
     }
 
-    /* SEO OPTIMIZATION: Skrytý text pre vyhľadávače, viditeľný len pre ne */
     .seo-hidden-text {
         position: absolute;
         width: 1px;
@@ -179,29 +175,24 @@
 
 <div class="seo-hidden-text">
     <h1>Kalkulačka kariet a zlata pre hru Smashing Four</h1>
-    <p>Vitajte na najlepšej Smashing Four kalkulačke kariet a zlata, ktorá vám pomôže naplánovať upgrade vašich hrdinov. Či už potrebujete vedieť, koľko kariet a zlata je potrebných na vylepšenie bežného, vzácneho alebo epického hrdinu na ďalšiu úroveň, alebo dokonca až na maximálnu úroveň 25, naša kalkulačka vám poskytne presné informácie.</p>
-    <p>Stačí si vybrať typ hrdinu (bežný, vzácny, epický), zadať jeho aktuálnu úroveň a počet kariet, ktoré máte. Okamžite zistíte, koľko kariet vám zostáva, koľko potrebujete do ďalšej úrovne, koľko kariet a zlata vás delí od úrovne 25 a celkové náklady na zlato.</p>
-    <p>Optimalizujte svoj postup v Smashing Four a dominujte na bojisku s presnými výpočtami pre vašich hrdinov. Táto nástroj je nevyhnutný pre každého hráča Smashing Four, ktorý chce efektívne spravovať svoje zdroje a rýchlo dosiahnuť plný potenciál svojich postáv. Sme hrdý SVK&CZE klan a radi pomáhame komunite Smashing Four!</p>
-    <h2>Smashing Four Hero Upgrade Costs</h2>
-    <p>This Smashing Four card and gold calculator helps you determine the exact number of cards and gold required to upgrade your Common, Rare, and Epic heroes to any desired level, up to the maximum level 25. Easily calculate remaining cards, cards to next level, cards to max level, and total gold cost. A must-have tool for every Smashing Four player!</p>
+    <p>Vitajte na najlepšej Smashing Four kalkulačke kariet a zlata, ktorá vám pomôže naplánovať upgrade vašich hrdinov až na úroveň 27, vrátane rezervy kariet na darovanie v klane.</p>
 </div>
 
 <div id="language-switcher-left" class="language-switcher">
-  <img src="sk_flag.png" alt="Slovenská vlajka - prepni jazyk na slovenčinu" onclick="setLanguage('sk')">
-  <img src="cz_flag.png" alt="Česká vlajka - prepni jazyk na češtinu" onclick="setLanguage('cs')">
-  <img src="pl_flag.png" alt="Poľská vlajka - prepni jazyk na poľštinu" onclick="setLanguage('pl')">
-  <img src="de_flag.png" alt="Nemecká vlajka - prepni jazyk na nemčinu" onclick="setLanguage('de')">
-  <img src="nl_flag.png" alt="Holandská vlajka - prepni jazyk na holandčinu" onclick="setLanguage('nl')">
+  <img src="sk_flag.png" alt="Slovenská vlajka" onclick="setLanguage('sk')">
+  <img src="cz_flag.png" alt="Česká vlajka" onclick="setLanguage('cs')">
+  <img src="pl_flag.png" alt="Poľská vlajka" onclick="setLanguage('pl')">
+  <img src="de_flag.png" alt="Nemecká vlajka" onclick="setLanguage('de')">
+  <img src="nl_flag.png" alt="Holandská vlajka" onclick="setLanguage('nl')">
 </div>
 
 <div id="language-switcher-right" class="language-switcher">
-  <img src="us_flag.png" alt="Americká vlajka - prepni jazyk na angličtinu" onclick="setLanguage('en')">
-  <img src="es_flag.png" alt="Španielska vlajka - prepni jazyk na španielčinu" onclick="setLanguage('es')">
-  <img src="pt_flag.png" alt="Portugalská vlajka - prepni jazyk na portugalčinu" onclick="setLanguage('pt')">
-  <img src="ru_flag.png" alt="Ruská vlajka - prepni jazyk na ruštinu" onclick="setLanguage('ru')">
-  <img src="cn_flag.png" alt="Čínska vlajka - prepni jazyk na čínštinu" onclick="setLanguage('zh')">
+  <img src="us_flag.png" alt="Americká vlajka" onclick="setLanguage('en')">
+  <img src="es_flag.png" alt="Španielska vlajka" onclick="setLanguage('es')">
+  <img src="pt_flag.png" alt="Portugalská vlajka" onclick="setLanguage('pt')">
+  <img src="ru_flag.png" alt="Ruská vlajka" onclick="setLanguage('ru')">
+  <img src="cn_flag.png" alt="Čínska vlajka" onclick="setLanguage('zh')">
 </div>
-
 
 <div class="logo-container">
   <img src="smashing_four_logo1.jpg" alt="Smashing Four Logo - Kalkulačka kariet hrdinov">
@@ -220,65 +211,85 @@
 <input type="number" id="currentLevel" placeholder="Zadaj úroveň hrdinu" />
 
 <label for="cards" id="cardsLabel">Počet kariet:</label>
-<input type="number" id="cards" min="0" max="80707" placeholder="Zadaj počet kariet" />
+<input type="number" id="cards" min="0" max="122708" placeholder="Zadaj počet kariet" />
 
 <button onclick="calculate()" id="calculateButton">Vypočítať</button>
 
 <div id="output"></div>
 
 <footer>
-    © 2025 mIReC | svk&cze klan
+    © 2026 mIReC | svk&cze klan
 </footer>
 
 <script>
 const levelData = [
-  {common: 2, rare: 'Unlock', epic: 'Unlock', gold: 10}, {common: 5, rare: 'Unlock', epic: 'Unlock', gold: 25}, {common: 10, rare: 2, epic: 'Unlock', gold: 50}, {common: 20, rare: 5, epic: 'Unlock', gold: 150}, {common: 45, rare: 10, epic: 2, gold: 450}, {common: 75, rare: 20, epic: 5, gold: 750}, {common: 150, rare: 45, epic: 10, gold: 1500}, {common: 300, rare: 75, epic: 20, gold: 3000}, {common: 500, rare: 125, epic: 30, gold: 5000}, {common: 725, rare: 190, epic: 45, gold: 9700}, {common: 975, rare: 300, epic: 70, gold: 14200}, {common: 1250, rare: 450, epic: 105, gold: 20800}, {common: 1550, rare: 630, epic: 155, gold: 27100}, {common: 1900, rare: 825, epic: 220, gold: 36500}, {common: 2300, rare: 1050, epic: 300, gold: 45300}, {common: 2800, rare: 1300, epic: 390, gold: 54600}, {common: 3500, rare: 1575, epic: 490, gold: 70000}, {common: 4400, rare: 1875, epic: 600, gold: 90000}, {common: 5400, rare: 2250, epic: 720, gold: 108000}, {common: 6800, rare: 2700, epic: 900, gold: 136000}, {common: 8500, rare: 3225, epic: 1125, gold: 170000}, {common: 10500, rare: 3800, epic: 1375, gold: 210000}, {common: 13000, rare: 4600, epic: 1675, gold: 260000}, {common: 16000, rare: 6000, epic: 2000, gold: 320000}, {common: 'Full', rare: 'Full', epic: 'Full', gold: 'Full'}
+  {common: 2, rare: 'Unlock', epic: 'Unlock', gold: 10},
+  {common: 5, rare: 'Unlock', epic: 'Unlock', gold: 25},
+  {common: 10, rare: 2, epic: 'Unlock', gold: 50},
+  {common: 20, rare: 5, epic: 'Unlock', gold: 150},
+  {common: 45, rare: 10, epic: 2, gold: 450},
+  {common: 75, rare: 20, epic: 5, gold: 750},
+  {common: 150, rare: 45, epic: 10, gold: 1500},
+  {common: 300, rare: 75, epic: 20, gold: 3000},
+  {common: 500, rare: 125, epic: 30, gold: 5000},
+  {common: 725, rare: 190, epic: 45, gold: 9700},
+  {common: 975, rare: 300, epic: 70, gold: 14200},
+  {common: 1250, rare: 450, epic: 105, gold: 20800},
+  {common: 1550, rare: 630, epic: 155, gold: 27100},
+  {common: 1900, rare: 825, epic: 220, gold: 36500},
+  {common: 2300, rare: 1050, epic: 300, gold: 45300},
+  {common: 2800, rare: 1300, epic: 390, gold: 54600},
+  {common: 3500, rare: 1575, epic: 490, gold: 70000},
+  {common: 4400, rare: 1875, epic: 600, gold: 90000},
+  {common: 5400, rare: 2250, epic: 720, gold: 108000},
+  {common: 6800, rare: 2800, epic: 900, gold: 136000},
+  {common: 8500, rare: 3225, epic: 1125, gold: 170000},
+  {common: 10500, rare: 3800, epic: 1375, gold: 210000},
+  {common: 13000, rare: 4600, epic: 1675, gold: 260000},
+  {common: 16000, rare: 6000, epic: 2000, gold: 320000},
+  {common: 19000, rare: 7400, epic: 2400, gold: 320000},
+  {common: 22500, rare: 8800, epic: 2850, gold: 320000},
+  {common: 'Full', rare: 'Full', epic: 'Full', gold: 'Full'}
 ];
 
-// Objekt s prekladmi (SEO texty sú oddelené)
 const translations = {
     'sk': {
-        // SEO meta tagy - tieto sa nastavia dynamicky do <head>
         pageTitle: 'Kalkulačka kariet Smashing Four - Výpočet Kariet a Zlata | S4 Klan SK&CZE',
-        metaDescription: 'Presná kalkulačka kariet a zlata pre hru Smashing Four. Zistite, koľko kariet a zlata potrebujete na upgrade bežných, vzácnych a epických hrdinov až na úroveň 25.',
-        metaKeywords: 'Smashing Four, kalkulačka kariet, kalkulačka zlata, hrdinovia, upgrade, levelovanie, bežný, vzácny, epický, výpočet, koľko kariet, koľko zlata, Smashing Four calculator, card calculator, gold calculator, hero upgrade, level up, common, rare, epic, game tool, S4',
+        metaDescription: 'Presná kalkulačka kariet a zlata pre hru Smashing Four s podporou pre darovanie kariet.',
+        metaKeywords: 'Smashing Four, kalkulačka kariet, zlato, klan, darovanie',
 
-        // Viditeľné texty na stránke - pôvodné
         calculatorTitle: 'Kalkulačka kariet',
         heroTypeLabel: 'Typ hrdiny:',
         commonOption: 'Bežný',
         rareOption: 'Vzácny',
         epicOption: 'Epický',
         currentLevelLabel: 'Úroveň hrdiny:',
-        currentLevelPlaceholder: 'Zadaj úroveň hrdiny',
+        currentLevelPlaceholder: 'Zadaj úroveň hrdinu',
         cardsLabel: 'Počet kariet:',
         cardsPlaceholder: 'Zadaj počet kariet',
         calculateButton: 'Vypočítať',
 
-        // Výstupy a chybové hlásenia
         outputMaxLevelReached: 'Tvoj hrdina je na maximálnej úrovni!',
         outputMaxLevel: 'Maximálna možná úroveň:',
         outputRemainingCards: 'Zostávajúce karty:',
         outputCardsToNextLvl: 'Chýbajúce karty do ďalšej úrovne:',
-        outputCardsToLvl25: 'Chýbajúce karty na úroveň 25:',
+        outputCardsToLvl27: 'Chýbajúce karty na úroveň 27:',
         outputGoldToLevel: 'Potrebné zlato na úroveň',
-        outputGoldToMax: 'Potrebné zlato na úroveň 25:',
-        errorInvalidLevel: 'Zadaj platnú úroveň hrdiny!',
-        errorCommonLevelRange: 'Úroveň bežných hrdinov musí byť medzi 1 a 25!',
+        outputGoldToMax: 'Potrebné zlato na úroveň 27:',
+        errorInvalidLevel: 'Zadaj platnú úroveň hrdinu!',
+        errorCommonLevelRange: 'Úroveň bežných hrdinov musí byť medzi 1 a 27!',
         errorRareLevelStart: 'Úroveň vzácnych hrdinov začína od 3. úrovne!',
         errorEpicLevelStart: 'Úroveň epických hrdinov začína od 5. úrovne!',
         errorInvalidCards: 'Zadaj platný počet kariet!',
-        errorMaxCards: 'Počet kariet nesmie presiahnuť {maxCards}!',
-        errorCardsExceedMaxPossible: 'Maximálny počet kariet je {maxCards}.',
+        errorMaxCards: 'Počet kariet nesmie presiahnuť {maxCards} (vrátane kariet na darovanie)!',
+        errorCardsExceedMaxPossible: 'Maximálny počet kariet vrátane rezervy na darovanie je {maxCards}.',
         outputMaxLevelAchievedText: '0'
     },
     'en': {
-        // SEO meta tagy
-        pageTitle: 'Smashing Four Card & Gold Calculator - Hero Upgrade Costs | S4 Clan SK&CZE',
-        metaDescription: 'Accurate Smashing Four card and gold calculator. Find out how many cards and gold you need to upgrade Common, Rare, and Epic heroes up to level 25. Plan your hero progression effectively!',
-        metaKeywords: 'Smashing Four, card calculator, gold calculator, hero upgrade, level up, common, rare, epic, calculation, how many cards, how much gold, Smashing Four tool, S4',
+        pageTitle: 'Smashing Four Card & Gold Calculator | S4 Clan SK&CZE',
+        metaDescription: 'Accurate Smashing Four card and gold calculator with clan donation overflow support.',
+        metaKeywords: 'Smashing Four, card calculator, gold, clan donation',
 
-        // Viditeľné texty na stránke - pôvodné
         calculatorTitle: 'Card Calculator',
         heroTypeLabel: 'Hero Type:',
         commonOption: 'Common',
@@ -290,65 +301,58 @@ const translations = {
         cardsPlaceholder: 'Enter number of cards',
         calculateButton: 'Calculate',
 
-        // Výstupy a chybové hlásenia
         outputMaxLevelReached: 'Your hero is at maximum level!',
         outputMaxLevel: 'Maximum possible level:',
         outputRemainingCards: 'Remaining cards:',
         outputCardsToNextLvl: 'Missing cards to next level:',
-        outputCardsToLvl25: 'Missing cards to reach level 25:',
+        outputCardsToLvl27: 'Missing cards to reach level 27:',
         outputGoldToLevel: 'Gold needed for reach level',
-        outputGoldToMax: 'Gold needed for reach level 25:',
+        outputGoldToMax: 'Gold needed for reach level 27:',
         errorInvalidLevel: 'Enter a valid hero level!',
-        errorCommonLevelRange: 'Common hero level must be between 1 and 25!',
+        errorCommonLevelRange: 'Common hero level must be between 1 and 27!',
         errorRareLevelStart: 'Rare hero level starts from level 3!',
         errorEpicLevelStart: 'Epic hero level starts from level 5!',
         errorInvalidCards: 'Enter a valid number of cards!',
-        errorMaxCards: 'Number of cards cannot exceed {maxCards}!',
-        errorCardsExceedMaxPossible: 'Maximum number of cards are {maxCards}.',
+        errorMaxCards: 'Number of cards cannot exceed {maxCards} (including donation cards)!',
+        errorCardsExceedMaxPossible: 'Maximum number of cards including donation reserve is {maxCards}.',
         outputMaxLevelAchievedText: '0'
     },
     'cs': {
-        // SEO meta tagy
-        pageTitle: 'Kalkulačka karet Smashing Four - Výpočet Karet a Zlata | S4 Klan SK&CZE',
-        metaDescription: 'Přesná kalkulačka karet a zlata pro hru Smashing Four. Zjistěte, kolik karet a zlata potřebujete k vylepšení běžných, vzácných a epických hrdinů až na úroveň 25.',
-        metaKeywords: 'Smashing Four, kalkulačka karet, kalkulačka zlata, hrdinové, upgrade, levelování, běžný, vzácný, epický, výpočet, kolik karet, kolik zlata, Smashing Four kalkulátor, S4',
+        pageTitle: 'Kalkulačka karet Smashing Four | S4 Klan SK&CZE',
+        metaDescription: 'Přesná kalkulačka karet a zlata pro Smashing Four s podporou darování karet v klanu.',
+        metaKeywords: 'Smashing Four, kalkulačka karet, zlato, klan, darování',
 
-        // Viditeľné texty na stránke
         calculatorTitle: 'Kalkulačka karet',
         heroTypeLabel: 'Typ hrdiny:',
         commonOption: 'Běžný',
         rareOption: 'Vzácný',
         epicOption: 'Epický',
         currentLevelLabel: 'Úroveň hrdiny:',
-        currentLevelPlaceholder: 'Zadej úroveň hrdiny',
+        currentLevelPlaceholder: 'Zadej úroveň hrdinu',
         cardsLabel: 'Počet karet:',
         cardsPlaceholder: 'Zadej počet karet',
         calculateButton: 'Vypočítat',
 
-        // Výstupy a chybové hlásenia
         outputMaxLevelReached: 'Tvůj hrdina je na maximální úrovni!',
         outputMaxLevel: 'Maximální možná úroveň:',
         outputRemainingCards: 'Zbývající karty:',
         outputCardsToNextLvl: 'Chybějící karty do další úrovně:',
-        outputCardsToLvl25: 'Chybějící karty na úroveň 25:',
+        outputCardsToLvl27: 'Chybějící karty na úroveň 27:',
         outputGoldToLevel: 'Zlato potřebné pro úroveň',
-        outputGoldToMax: 'Zlato potřebné pro úroveň 25:',
+        outputGoldToMax: 'Zlato potřebné pro úroveň 27:',
         errorInvalidLevel: 'Zadej platnou úroveň hrdiny!',
-        errorCommonLevelRange: 'Úroveň běžných hrdinů musí být mezi 1 a 25!',
+        errorCommonLevelRange: 'Úroveň běžných hrdinů musí být mezi 1 a 27!',
         errorRareLevelStart: 'Úroveň vzácných hrdinů začíná od 3. úrovně!',
         errorEpicLevelStart: 'Úroveň epických hrdinů začíná od 5. úrovně!',
-        errorInvalidCards: 'Zadej platný počet karet!',
-        errorMaxCards: 'Počet karet nesmí přesáhnout {maxCards}!',
-        errorCardsExceedMaxPossible: 'Maximální počet karet je {maxCards}.',
+        errorInvalidCards: 'Zadaj platný počet karet!',
+        errorMaxCards: 'Počet karet nesmí presiahnuť {maxCards} (včetně karet na darování)!',
+        errorCardsExceedMaxPossible: 'Maximální počet karet včetně rezervy na darování je {maxCards}.',
         outputMaxLevelAchievedText: '0'
     },
     'de': {
-        // SEO meta tagy
-        pageTitle: 'Smashing Four Karten- & Goldrechner - Helden-Upgrade Kosten | S4 Clan SK&CZE',
-        metaDescription: 'Genauer Smashing Four Karten- und Goldrechner. Finden Sie heraus, wie viele Karten und Gold Sie benötigen, um Gewöhnliche, Seltene und Epische Helden bis Level 25 aufzuwerten. Planen Sie Ihren Heldenfortschritt effektiv!',
-        metaKeywords: 'Smashing Four, Kartenrechner, Goldrechner, Helden-Upgrade, Level Up, Gewöhnlich, Selten, Episch, Berechnung, wie viele Karten, wie viel Gold, Smashing Four Tool, S4',
-
-        // Viditeľné texty na stránke
+        pageTitle: 'Smashing Four Karten- & Goldrechner | S4 Clan SK&CZE',
+        metaDescription: 'Genauer Smashing Four Kartenrechner mit Clanspenden-Unterstützung.',
+        metaKeywords: 'Smashing Four, Kartenrechner, Spenden',
         calculatorTitle: 'Kartenrechner',
         heroTypeLabel: 'Heldentyp:',
         commonOption: 'Gewöhnlich',
@@ -359,254 +363,218 @@ const translations = {
         cardsLabel: 'Anzahl der Karten:',
         cardsPlaceholder: 'Anzahl der Karten eingeben',
         calculateButton: 'Berechnen',
-
-        // Výstupy a chybové hlásenia
         outputMaxLevelReached: 'Dein Held hat das maximale Level erreicht!',
         outputMaxLevel: 'Maximal mögliches Level:',
         outputRemainingCards: 'Verbleibende Karten:',
         outputCardsToNextLvl: 'Fehlende Karten zum nächsten Level:',
-        outputCardsToLvl25: 'Fehlende Karten bis Level 25:',
+        outputCardsToLvl27: 'Fehlende Karten bis Level 27:',
         outputGoldToLevel: 'Benötigtes Gold für Level',
-        outputGoldToMax: 'Benötigtes Gold für Level 25:',
+        outputGoldToMax: 'Benötigtes Gold für Level 27:',
         errorInvalidLevel: 'Gib ein gültiges Heldenlevel ein!',
-        errorCommonLevelRange: 'Das Level für gewöhnliche Helden muss zwischen 1 und 25 liegen!',
-        errorRareLevelStart: 'Das Level für seltene Helden beginnt bei Level 3!',
-        errorEpicLevelStart: 'Das Level für epische Helden beginnt bei Level 5!',
-        errorInvalidCards: 'Gib eine gültige Anzahl an Karten ein!',
-        errorMaxCards: 'Die Anzahl der Karten darf {maxCards} nicht überschreiten!',
-        errorCardsExceedMaxPossible: 'Die maximale Anzahl an Karten beträgt {maxCards}.',
+        errorCommonLevelRange: 'Das Level muss zwischen 1 und 27 liegen!',
+        errorRareLevelStart: 'Beginnt bei Level 3!',
+        errorEpicLevelStart: 'Beginnt bei Level 5!',
+        errorInvalidCards: 'Ungültige Anzahl!',
+        errorMaxCards: 'Darf {maxCards} nicht überschreiten!',
+        errorCardsExceedMaxPossible: 'Maximum inklusive Spendenreserve ist {maxCards}.',
         outputMaxLevelAchievedText: '0'
     },
     'es': {
-        // SEO meta tagy
-        pageTitle: 'Calculadora de Cartas y Oro Smashing Four - Costos de Mejora de Héroes | S4 Clan SK&CZE',
-        metaDescription: 'Calculadora precisa de cartas y oro para Smashing Four. Averigua cuántas cartas y oro necesitas para mejorar héroes Comunes, Raros y Épicos hasta el nivel 25. ¡Planifica tu progresión de héroes de manera efectiva!',
-        metaKeywords: 'Smashing Four, calculadora de cartas, calculadora de oro, mejora de héroes, subir de nivel, común, raro, épico, cálculo, cuántas cartas, cuánto oro, herramienta Smashing Four, S4',
-
-        // Viditeľné texty na stránke
+        pageTitle: 'Calculadora de Cartas Smashing Four | S4 Clan SK&CZE',
+        metaDescription: 'Calculadora de cartas Smashing Four con soporte para donaciones.',
+        metaKeywords: 'Smashing Four, calculadora',
         calculatorTitle: 'Calculadora de Cartas',
         heroTypeLabel: 'Tipo de héroe:',
         commonOption: 'Común',
         rareOption: 'Raro',
         epicOption: 'Épico',
         currentLevelLabel: 'Nivel del héroe:',
-        currentLevelPlaceholder: 'Introduce el nivel del héroe',
+        currentLevelPlaceholder: 'Introduce el nivel',
         cardsLabel: 'Número de cartas:',
-        cardsPlaceholder: 'Introduce el número de cartas',
+        cardsPlaceholder: 'Introduce cartas',
         calculateButton: 'Calcular',
-
-        // Výstupy a chybové hlásenia
         outputMaxLevelReached: '¡Tu héroe está en el nivel máximo!',
         outputMaxLevel: 'Nivel máximo posible:',
         outputRemainingCards: 'Cartas restantes:',
-        outputCardsToNextLvl: 'Cartas que faltan para el siguiente nivel:',
-        outputCardsToLvl25: 'Cartas que faltan para el nivel 25:',
+        outputCardsToNextLvl: 'Cartas para el siguiente nivel:',
+        outputCardsToLvl27: 'Cartas para nivel 27:',
         outputGoldToLevel: 'Oro necesario para el nivel',
-        outputGoldToMax: 'Oro necesario para el nivel 25:',
-        errorInvalidLevel: '¡Introduce un nivel de héroe válido!',
-        errorCommonLevelRange: '¡El nivel de héroe común debe estar entre 1 y 25!',
-        errorRareLevelStart: '¡El nivel de héroe raro comienza en el nivel 3!',
-        errorEpicLevelStart: '¡El nivel de héroe épico comienza en el nivel 5!',
-        errorInvalidCards: '¡Introduce un número de cartas válido!',
-        errorMaxCards: '¡El número de cartas no puede exceder {maxCards}!',
-        errorCardsExceedMaxPossible: 'El número máximo de cartas es {maxCards}.',
+        outputGoldToMax: 'Oro para nivel 27:',
+        errorInvalidLevel: '¡Nivel inválido!',
+        errorCommonLevelRange: '¡Entre 1 y 27!',
+        errorRareLevelStart: '¡Desde nivel 3!',
+        errorEpicLevelStart: '¡Desde nivel 5!',
+        errorInvalidCards: '¡Cartas inválidas!',
+        errorMaxCards: '¡No puede exceder {maxCards}!',
+        errorCardsExceedMaxPossible: 'Máximo con reserva es {maxCards}.',
         outputMaxLevelAchievedText: '0'
     },
     'pt': {
-        // SEO meta tagy
-        pageTitle: 'Calculadora de Cartas e Ouro Smashing Four - Custos de Upgrade de Heróis | S4 Clan SK&CZE',
-        metaDescription: 'Calculadora precisa de cartas e ouro para Smashing Four. Descubra quantas cartas e ouro você precisa para fazer upgrade de heróis Comuns, Raros e Épicos até o nível 25. Planeje sua progressão de heróis de forma eficaz!',
-        metaKeywords: 'Smashing Four, calculadora de cartas, calculadora de ouro, upgrade de heróis, subir de nível, comum, raro, épico, cálculo, quantas cartas, quanto ouro, ferramenta Smashing Four, S4',
-
-        // Viditeľné texty na stránke
+        pageTitle: 'Calculadora de Cartas Smashing Four | S4 Clan SK&CZE',
+        metaDescription: 'Calculadora de cartas com suporte a doações.',
+        metaKeywords: 'Smashing Four',
         calculatorTitle: 'Calculadora de Cartas',
         heroTypeLabel: 'Tipo de Herói:',
         commonOption: 'Comum',
         rareOption: 'Raro',
         epicOption: 'Épico',
         currentLevelLabel: 'Nível do Herói:',
-        currentLevelPlaceholder: 'Digite o nível do herói',
+        currentLevelPlaceholder: 'Digite o nível',
         cardsLabel: 'Número de Cartas:',
-        cardsPlaceholder: 'Digite o número de cartas',
+        cardsPlaceholder: 'Digite as cartas',
         calculateButton: 'Calcular',
-
-        // Výstupy a chybové hlásenia
         outputMaxLevelReached: 'Seu herói está no nível máximo!',
         outputMaxLevel: 'Nível máximo possível:',
         outputRemainingCards: 'Cartas restantes:',
-        outputCardsToNextLvl: 'Cartas em falta para o próximo nível:',
-        outputCardsToLvl25: 'Cartas em falta para o nível 25:',
+        outputCardsToNextLvl: 'Cartas para o próximo nível:',
+        outputCardsToLvl27: 'Cartas para o nível 27:',
         outputGoldToLevel: 'Ouro necessário para o nível',
-        outputGoldToMax: 'Ouro necessário para o nível 25:',
-        errorInvalidLevel: 'Digite um nível de herói válido!',
-        errorCommonLevelRange: 'O nível do herói comum deve estar entre 1 e 25!',
-        errorRareLevelStart: 'O nível do herói raro começa no nível 3!',
-        errorEpicLevelStart: 'O nível do herói épico começa no nível 5!',
-        errorInvalidCards: 'Digite um número de cartas válido!',
-        errorMaxCards: 'O número de cartas não pode exceder {maxCards}!',
-        errorCardsExceedMaxPossible: 'O número máximo de cartas é {maxCards}.',
+        outputGoldToMax: 'Ouro para o nível 27:',
+        errorInvalidLevel: 'Nível inválido!',
+        errorCommonLevelRange: 'Entre 1 e 27!',
+        errorRareLevelStart: 'A partir do 3!',
+        errorEpicLevelStart: 'A partir do 5!',
+        errorInvalidCards: 'Cartas inválidas!',
+        errorMaxCards: 'Não pode exceder {maxCards}!',
+        errorCardsExceedMaxPossible: 'Máximo com reserva é {maxCards}.',
         outputMaxLevelAchievedText: '0'
     },
     'nl': {
-        // SEO meta tagy
-        pageTitle: 'Smashing Four Kaart- & Goudcalculator - Helden Upgrade Kosten | S4 Clan SK&CZE',
-        metaDescription: 'Nauwkeurige Smashing Four kaart- en goudcalculator. Ontdek hoeveel kaarten en goud je nodig hebt om Gewone, Zeldzame en Epische helden te upgraden tot niveau 25. Plan je heldenprogressie effectief!',
-        metaKeywords: 'Smashing Four, kaartcalculator, goudcalculator, helden-upgrade, level up, gewoon, zeldzaam, episch, berekening, hoeveel kaarten, hoeveel goud, Smashing Four tool, S4',
-
-        // Viditeľné texty na stránke
+        pageTitle: 'Smashing Four Kaartcalculator | S4 Clan SK&CZE',
+        metaDescription: 'Kaartcalculator met clan-donatie ondersteuning.',
+        metaKeywords: 'Smashing Four',
         calculatorTitle: 'Kaartcalculator',
         heroTypeLabel: 'Heldentype:',
         commonOption: 'Gewoon',
         rareOption: 'Zeldzaam',
         epicOption: 'Episch',
         currentLevelLabel: 'Heldenniveau:',
-        currentLevelPlaceholder: 'Voer heldenniveau in',
+        currentLevelPlaceholder: 'Voer niveau in',
         cardsLabel: 'Aantal kaarten:',
-        cardsPlaceholder: 'Voer aantal kaarten in',
+        cardsPlaceholder: 'Voer kaarten in',
         calculateButton: 'Berekenen',
-
-        // Výstupy a chybové hlásenia
-        outputMaxLevelReached: 'Je held heeft het maximale niveau bereikt!',
-        outputMaxLevel: 'Maximaal mogelijk niveau:',
+        outputMaxLevelReached: 'Maximaal niveau bereikt!',
+        outputMaxLevel: 'Maximaal niveau:',
         outputRemainingCards: 'Resterende kaarten:',
-        outputCardsToNextLvl: 'Kaarten nodig voor volgend niveau:',
-        outputCardsToLvl25: 'Kaarten nodig voor niveau 25:',
+        outputCardsToNextLvl: 'Kaarten voor volgend niveau:',
+        outputCardsToLvl27: 'Kaarten voor niveau 27:',
         outputGoldToLevel: 'Goud nodig voor niveau',
-        outputGoldToMax: 'Goud nodig voor niveau 25:',
-        errorInvalidLevel: 'Voer een geldig heldenniveau in!',
-        errorCommonLevelRange: 'Gewoon heldenniveau moet tussen 1 en 25 zijn!',
-        errorRareLevelStart: 'Zeldzaam heldenniveau begint vanaf niveau 3!',
-        errorEpicLevelStart: 'Episch heldenniveau begint vanaf niveau 5!',
-        errorInvalidCards: 'Voer een geldig aantal kaarten in!',
-        errorMaxCards: 'Aantal kaarten mag niet hoger zijn dan {maxCards}!',
-        errorCardsExceedMaxPossible: 'Het maximale aantal kaarten is {maxCards}.',
+        outputGoldToMax: 'Goud voor niveau 27:',
+        errorInvalidLevel: 'Ongeldig niveau!',
+        errorCommonLevelRange: 'Tussen 1 en 27!',
+        errorRareLevelStart: 'Vanaf niveau 3!',
+        errorEpicLevelStart: 'Vanaf niveau 5!',
+        errorInvalidCards: 'Ongeldige kaarten!',
+        errorMaxCards: 'Mag niet hoger zijn dan {maxCards}!',
+        errorCardsExceedMaxPossible: 'Maximum inclusief reservering is {maxCards}.',
         outputMaxLevelAchievedText: '0'
     },
     'pl': {
-        // SEO meta tagy
-        pageTitle: 'Kalkulator kart i złota Smashing Four - Koszty ulepszeń bohaterów | S4 Klan SK&CZE',
-        metaDescription: 'Dokładny kalkulator kart i złota do Smashing Four. Dowiedz się, ile kart i złota potrzebujesz, aby ulepszyć bohaterów Zwykłych, Rzadkich i Epickich do poziomu 25. Skutecznie planuj rozwój swoich bohaterów!',
-        metaKeywords: 'Smashing Four, kalkulator kart, kalkulator złota, ulepszanie bohaterów, poziomowanie, zwykły, rzadki, epicki, obliczenia, ile kart, ile złota, narzędzie Smashing Four, S4',
-
-        // Viditeľné texty na stránke
+        pageTitle: 'Kalkulator kart Smashing Four | S4 Klan SK&CZE',
+        metaDescription: 'Kalkulator kart z obsługą darowizn w klanie.',
+        metaKeywords: 'Smashing Four',
         calculatorTitle: 'Kalkulator kart',
         heroTypeLabel: 'Typ bohatera:',
         commonOption: 'Zwykły',
         rareOption: 'Rzadki',
         epicOption: 'Epicki',
         currentLevelLabel: 'Poziom bohatera:',
-        currentLevelPlaceholder: 'Wpisz poziom bohatera',
+        currentLevelPlaceholder: 'Wpisz poziom',
         cardsLabel: 'Liczba kart:',
-        cardsPlaceholder: 'Wpisz liczbę kart',
+        cardsPlaceholder: 'Wpisz karty',
         calculateButton: 'Oblicz',
-
-        // Výstupy a chybové hlásenia
-        outputMaxLevelReached: 'Twój bohater jest na maksymalnym poziomie!',
-        outputMaxLevel: 'Maksymalny możliwy poziom:',
+        outputMaxLevelReached: 'Maksymalny poziom!',
+        outputMaxLevel: 'Maksymalny poziom:',
         outputRemainingCards: 'Pozostałe karty:',
-        outputCardsToNextLvl: 'Brakujące karty do następnego poziomu:',
-        outputCardsToLvl25: 'Brakujące karty do poziomu 25:',
-        outputGoldToLevel: 'Złoto potrzebne na poziom',
-        outputGoldToMax: 'Złoto potrzebne na poziom 25:',
-        errorInvalidLevel: 'Wpisz prawidłowy poziom bohatera!',
-        errorCommonLevelRange: 'Poziom zwykłego bohatera musi mieścić się w przedziale 1-25!',
-        errorRareLevelStart: 'Poziom rzadkiego bohatera zaczyna się od poziomu 3!',
-        errorEpicLevelStart: 'Poziom epickiego bohatera zaczyna się od poziomu 5!',
-        errorInvalidCards: 'Wpisz prawidłową liczbę kart!',
-        errorMaxCards: 'Liczba kart nie może przekroczyć {maxCards}!',
-        errorCardsExceedMaxPossible: 'Maksymalna liczba kart to {maxCards}.',
+        outputCardsToNextLvl: 'Karty do następnego poziomu:',
+        outputCardsToLvl27: 'Karty do poziomu 27:',
+        outputGoldToLevel: 'Złoto na poziom',
+        outputGoldToMax: 'Złoto na poziom 27:',
+        errorInvalidLevel: 'Nieprawidłowy poziom!',
+        errorCommonLevelRange: 'Między 1 a 27!',
+        errorRareLevelStart: 'Od poziomu 3!',
+        errorEpicLevelStart: 'Od poziomu 5!',
+        errorInvalidCards: 'Nieprawidłowe karty!',
+        errorMaxCards: 'Nie może przekroczyć {maxCards}!',
+        errorCardsExceedMaxPossible: 'Maksymalnie z rezerwią darowizny to {maxCards}.',
         outputMaxLevelAchievedText: '0'
     },
     'ru': {
-        // SEO meta tagy
-        pageTitle: 'Калькулятор карт и золота Smashing Four - Стоимость улучшений героев | S4 Клан SK&CZE',
-        metaDescription: 'Точный калькулятор карт и золота для Smashing Four. Узнайте, сколько карт и золота вам нужно для улучшения обычных, редких и эпических героев до 25 уровня. Эффективно планируйте развитие своего героя!',
-        metaKeywords: 'Smashing Four, калькулятор карт, калькулятор золота, улучшение героев, повышение уровня, обычный, редкий, эпический, расчет, сколько карт, сколько золота, инструмент Smashing Four, S4',
-
-        // Viditeľné texty na stránke
+        pageTitle: 'Калькулятор карт Smashing Four | S4 Клан SK&CZE',
+        metaDescription: 'Калькулятор с учетом пожертвований карт в клане.',
+        metaKeywords: 'Smashing Four',
         calculatorTitle: 'Калькулятор карт',
         heroTypeLabel: 'Тип героя:',
         commonOption: 'Обычный',
         rareOption: 'Редкий',
         epicOption: 'Эпический',
         currentLevelLabel: 'Уровень героя:',
-        currentLevelPlaceholder: 'Введите уровень героя',
+        currentLevelPlaceholder: 'Введите уровень',
         cardsLabel: 'Количество карт:',
-        cardsPlaceholder: 'Введите количество карт',
+        cardsPlaceholder: 'Введите карты',
         calculateButton: 'Рассчитать',
-
-        // Výstupy a chybové hlásenia
-        outputMaxLevelReached: 'Ваш герой достиг максимального уровня!',
-        outputMaxLevel: 'Максимально возможный уровень:',
+        outputMaxLevelReached: 'Максимальный уровень!',
+        outputMaxLevel: 'Максимальный уровень:',
         outputRemainingCards: 'Оставшиеся карты:',
-        outputCardsToNextLvl: 'Недостающие карты до следующего уровня:',
-        outputCardsToLvl25: 'Недостающие карты до 25 уровня:',
+        outputCardsToNextLvl: 'Карт до следующего уровня:',
+        outputCardsToLvl27: 'Карт до 27 уровня:',
         outputGoldToLevel: 'Золота для уровня',
-        outputGoldToMax: 'Золота для 25 уровня:',
-        errorInvalidLevel: 'Введите действительный уровень героя!',
-        errorCommonLevelRange: 'Уровень обычного героя должен быть от 1 до 25!',
-        errorRareLevelStart: 'Уровень редкого героя начинается с 3-го уровня!',
-        errorEpicLevelStart: 'Уровень эпического героя начинается с 5-го уровня!',
-        errorInvalidCards: 'Введите действительное количество карт!',
-        errorMaxCards: 'Количество карт не может превышать {maxCards}!',
-        errorCardsExceedMaxPossible: 'Максимальное количество карт: {maxCards}.',
+        outputGoldToMax: 'Золота для 27 уровня:',
+        errorInvalidLevel: 'Неверный уровень!',
+        errorCommonLevelRange: 'От 1 до 27!',
+        errorRareLevelStart: 'С 3 уровня!',
+        errorEpicLevelStart: 'С 5 уровня!',
+        errorInvalidCards: 'Неверные карты!',
+        errorMaxCards: 'Не может превышать {maxCards}!',
+        errorCardsExceedMaxPossible: 'Максимум с учетом резерва: {maxCards}.',
         outputMaxLevelAchievedText: '0'
     },
     'zh': {
-        // SEO meta tagy
-        pageTitle: 'Smashing Four 卡牌与金币计算器 - 英雄升级成本 | S4 部落 SK&CZE',
-        metaDescription: '精确的Smashing Four卡牌与金币计算器。了解升级普通、稀有和史诗英雄到25级所需的卡牌和金币数量。有效规划你的英雄进度！',
-        metaKeywords: 'Smashing Four, 卡牌计算器, 金币计算器, 英雄升级, 升级, 普通, 稀有, 史诗, 计算, 需要多少卡牌, 需要多少金币, Smashing Four 工具, S4',
-
-        // Viditeľné texty na stránke
+        pageTitle: 'Smashing Four 卡牌计算器 | S4 部落 SK&CZE',
+        metaDescription: '带部落捐赠卡牌余量支持的计算器。',
+        metaKeywords: 'Smashing Four',
         calculatorTitle: '卡牌计算器',
         heroTypeLabel: '英雄类型:',
         commonOption: '普通',
         rareOption: '稀有',
         epicOption: '史诗',
         currentLevelLabel: '英雄等级:',
-        currentLevelPlaceholder: '输入英雄等级',
+        currentLevelPlaceholder: '输入等级',
         cardsLabel: '卡牌数量:',
-        cardsPlaceholder: '输入卡牌数量',
+        cardsPlaceholder: '输入卡牌',
         calculateButton: '计算',
-
-        // Výstupy a chybové hlásenia
-        outputMaxLevelReached: '你的英雄已达到最高等级！',
-        outputMaxLevel: '可能达到的最高等级:',
+        outputMaxLevelReached: '已达最高等级！',
+        outputMaxLevel: '最高可能等级:',
         outputRemainingCards: '剩余卡牌:',
         outputCardsToNextLvl: '下一级所需卡牌:',
-        outputCardsToLvl25: '达到25级所需卡牌:',
+        outputCardsToLvl27: '达到27级所需卡牌:',
         outputGoldToLevel: '达到该等级所需金币',
-        outputGoldToMax: '达到25级所需金币:',
-        errorInvalidLevel: '请输入有效的英雄等级！',
-        errorCommonLevelRange: '普通英雄等级必须在1到25之间！',
-        errorRareLevelStart: '稀有英雄等级从3级开始！',
-        errorEpicLevelStart: '史诗英雄等级从5级开始！',
-        errorInvalidCards: '请输入有效的卡牌数量！',
-        errorMaxCards: '卡牌数量不能超过 {maxCards}！',
-        errorCardsExceedMaxPossible: '最大卡牌数量为 {maxCards}。',
+        outputGoldToMax: '达到27级所需金币:',
+        errorInvalidLevel: '无效等级！',
+        errorCommonLevelRange: '必须在1到27之间！',
+        errorRareLevelStart: '从3级开始！',
+        errorEpicLevelStart: '从5级开始！',
+        errorInvalidCards: '无效卡牌数量！',
+        errorMaxCards: '不能超过 {maxCards}！',
+        errorCardsExceedMaxPossible: '包含捐赠余量的最大卡牌数为 {maxCards}。',
         outputMaxLevelAchievedText: '0'
     }
 };
 
-let currentLang = 'sk'; // Prednastavený jazyk
+let currentLang = 'sk';
 
-// Funkcia na formátovanie zlata (použiteľná aj pre počet kariet)
 function formatGold(number) {
   return Number(number).toLocaleString('sk-SK').replace(/\u00A0/g, ' ');
 }
 
-// Funkcia na prepínanie jazykov
 function setLanguage(lang) {
     currentLang = lang;
     const t = translations[lang];
     const outputDiv = document.getElementById('output');
     const head = document.head;
 
-    // Aktualizácia title tagu
     document.getElementById('pageTitle').textContent = t.pageTitle;
 
-    // Aktualizácia meta description tagu
     let metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
         metaDescription.setAttribute('content', t.metaDescription);
@@ -617,7 +585,6 @@ function setLanguage(lang) {
         head.appendChild(metaDescription);
     }
 
-    // Aktualizácia meta keywords tagu
     let metaKeywords = document.querySelector('meta[name="keywords"]');
     if (metaKeywords) {
         metaKeywords.setAttribute('content', t.metaKeywords);
@@ -628,8 +595,6 @@ function setLanguage(lang) {
         head.appendChild(metaKeywords);
     }
 
-
-    // Nastavenie font-size pre #output DIV na základe jazyka
     switch (lang) {
         case 'sk':
         case 'cs':
@@ -638,16 +603,16 @@ function setLanguage(lang) {
             document.body.style.fontFamily = "'Russo One', sans-serif";
             break;
         case 'de':
-            outputDiv.style.fontSize = '13px'; // Zmenšené o 1px z 14px na 13px
+            outputDiv.style.fontSize = '13px';
             document.body.style.fontFamily = "'Russo One', sans-serif";
             break;
         case 'pl':
-            outputDiv.style.fontSize = '12px'; // Zväčšené o 1px z 11px na 12px
+            outputDiv.style.fontSize = '12px';
             document.body.style.fontFamily = "'Russo One', sans-serif";
             break;
         case 'es':
         case 'pt':
-            outputDiv.style.fontSize = '12px'; // Zmenšené o 2px (z 14px na 12px)
+            outputDiv.style.fontSize = '12px';
             document.body.style.fontFamily = "'Russo One', sans-serif";
             break;
         case 'ru':
@@ -665,7 +630,6 @@ function setLanguage(lang) {
             break;
     }
 
-    // PÔVODNÉ TEXTY PRE NÁVŠTEVNÍKOV
     document.getElementById('calculatorTitle').textContent = t.calculatorTitle;
     document.getElementById('heroTypeLabel').textContent = t.heroTypeLabel;
     document.getElementById('commonOption').textContent = t.commonOption;
@@ -677,7 +641,6 @@ function setLanguage(lang) {
     document.getElementById('cards').placeholder = t.cardsPlaceholder;
     document.getElementById('calculateButton').textContent = t.calculateButton;
 
-    // Po zmene jazyka vymažeme výsledky, aby nedošlo k zámene
     outputDiv.innerHTML = '';
 }
 
@@ -692,26 +655,45 @@ function calculate() {
 
   let errors = [];
 
-  // Validácia vstupu pre úroveň hrdinu
   if (isNaN(currentLevel)) {
     errors.push(t.errorInvalidLevel);
   } else {
-    if (heroType === 'common' && (currentLevel < 1 || currentLevel > 25)) {
+    if (heroType === 'common' && (currentLevel < 1 || currentLevel > 27)) {
       errors.push(t.errorCommonLevelRange);
-    } else if (heroType === 'rare' && (currentLevel < 3 || currentLevel > 25)) {
+    } else if (heroType === 'rare' && (currentLevel < 3 || currentLevel > 27)) {
       errors.push(t.errorRareLevelStart);
-    } else if (heroType === 'epic' && (currentLevel < 5 || currentLevel > 25)) {
+    } else if (heroType === 'epic' && (currentLevel < 5 || currentLevel > 27)) {
       errors.push(t.errorEpicLevelStart);
     }
   }
 
-  // Validácia vstupu pre počet kariet
+  // Stanovenie rezervy na darovanie podľa typu hrdinu (bežný: 500, vzácny: 200, epický: 100)
+  let donationReserve = 100;
+  if (heroType === 'common') {
+    donationReserve = 500;
+  } else if (heroType === 'rare') {
+    donationReserve = 200;
+  } else if (heroType === 'epic') {
+    donationReserve = 100;
+  }
+
+  let baseStartLevel = (heroType === 'common') ? 1 : (heroType === 'rare' ? 3 : 5);
+  let absoluteCardsToMax = 0;
+  for (let i = baseStartLevel - 1; i < 26; i++) {
+    const requirement = levelData[i][heroType];
+    if (typeof requirement === 'number') {
+      absoluteCardsToMax += requirement;
+    }
+  }
+  
+  const maxAllowedCardsWithDonation = absoluteCardsToMax + donationReserve;
+
   if (isNaN(cards)) {
     errors.push(t.errorInvalidCards);
   } else if (cards < 0) {
     errors.push(t.errorInvalidCards);
-  } else if (cards > 80707) {
-    errors.push(t.errorMaxCards.replace('{maxCards}', '80 707'));
+  } else if (cards > maxAllowedCardsWithDonation) {
+    errors.push(t.errorMaxCards.replace('{maxCards}', formatGold(maxAllowedCardsWithDonation)));
   }
 
   if (errors.length > 0) {
@@ -719,7 +701,7 @@ function calculate() {
     return;
   }
 
-  if (currentLevel === 25) {
+  if (currentLevel === 27) {
     outputDiv.innerHTML = `<span class="error">${t.outputMaxLevelReached}</span>`;
     currentLevelInput.value = "";
     cardsInput.value = "";
@@ -727,15 +709,17 @@ function calculate() {
   }
 
   let totalCardsRequiredToMax = 0;
-  for (let i = currentLevel - 1; i < 24; i++) {
+  for (let i = currentLevel - 1; i < 26; i++) {
     const requirement = levelData[i][heroType];
     if (typeof requirement === 'number') {
       totalCardsRequiredToMax += requirement;
     }
   }
 
-  if (cards > totalCardsRequiredToMax) {
-      errors.push(t.errorCardsExceedMaxPossible.replace('{maxCards}', formatGold(totalCardsRequiredToMax)));
+  const maxLimitForCurrentLevel = totalCardsRequiredToMax + donationReserve;
+
+  if (cards > maxLimitForCurrentLevel) {
+      errors.push(t.errorCardsExceedMaxPossible.replace('{maxCards}', formatGold(maxLimitForCurrentLevel)));
   }
 
   if (errors.length > 0) {
@@ -743,9 +727,8 @@ function calculate() {
     return;
   }
 
-
   let totalGoldToMax = 0;
-  for (let i = currentLevel - 1; i < 24; i++) {
+  for (let i = currentLevel - 1; i < 26; i++) {
     const step = levelData[i];
     const req = step[heroType];
     if (req === 'Full') break;
@@ -756,7 +739,7 @@ function calculate() {
   let finalLevel = currentLevel;
   let goldNeeded = 0;
 
-  while (finalLevel < 25) {
+  while (finalLevel < 27) {
     const index = finalLevel - 1;
     const neededCardsForThisLevelUp = levelData[index][heroType];
     const neededGoldForThisLevelUp = levelData[index].gold;
@@ -773,12 +756,13 @@ function calculate() {
     }
   }
 
-  if (finalLevel === 25) {
-      availableCards = 0;
+  // Ak dosiahol level 27, zostávajúce karty obsahujú aj prebytok, ale max. do výšky špecifickej rezervy na darovanie
+  if (finalLevel === 27) {
+      availableCards = Math.min(availableCards, donationReserve);
   }
 
   let cardsToNextLevelText = '';
-  if (finalLevel < 25) {
+  if (finalLevel < 27) {
     const cardsRequiredForNextSingleLevelUp = levelData[finalLevel - 1][heroType];
     if (cardsRequiredForNextSingleLevelUp !== 'Full') {
       const cardsNeeded = cardsRequiredForNextSingleLevelUp - availableCards;
@@ -790,29 +774,28 @@ function calculate() {
     cardsToNextLevelText = t.outputMaxLevelAchievedText;
   }
 
-  const cardsNeededForLvl25 = Math.max(0, totalCardsRequiredToMax - cards);
+  const cardsNeededForLvl27 = Math.max(0, totalCardsRequiredToMax - cards);
 
   let resultHTML = `
     ${t.outputMaxLevel} ${finalLevel}<br>
     ${t.outputRemainingCards} ${formatGold(availableCards)}<br>
     ${t.outputCardsToNextLvl} ${formatGold(cardsToNextLevelText)}<br>
-    ${t.outputCardsToLvl25} ${formatGold(cardsNeededForLvl25)}<br>
+    ${t.outputCardsToLvl27} ${formatGold(cardsNeededForLvl27)}<br>
     ${t.outputGoldToLevel} ${finalLevel}: ${formatGold(goldNeeded)}
   `;
 
-  if (finalLevel < 25) {
+  if (finalLevel < 27) {
     resultHTML += `<br>${t.outputGoldToMax} ${formatGold(totalGoldToMax)}`;
   }
 
   outputDiv.innerHTML = resultHTML;
 
-  if (errors.length === 0 && currentLevel !== 25) {
+  if (errors.length === 0 && currentLevel !== 27) {
     currentLevelInput.value = "";
     cardsInput.value = "";
   }
 }
 
-// SEO OPTIMIZATION: Funkcia pre aktualizáciu meta tagov pri zmene jazyka
 function updateMetaTags(lang) {
     const t = translations[lang];
     document.getElementById('pageTitle').textContent = t.pageTitle;
@@ -838,17 +821,14 @@ function updateMetaTags(lang) {
     }
 }
 
-// Pôvodné načítanie jazyka
 document.addEventListener('DOMContentLoaded', () => {
-    setLanguage('sk'); // Nastaví základný jazyk a UI texty
-    // Pri prvom načítaní stačí volať setLanguage, ktorá už volá updateMetaTags
+    setLanguage('sk');
 });
 
-// Upravená funkcia setLanguage, aby volala updateMetaTags
-const originalSetLanguage = setLanguage; // Uložíme pôvodnú referenciu
+const originalSetLanguage = setLanguage;
 setLanguage = function(lang) {
-    originalSetLanguage(lang); // Voláme pôvodnú funkciu
-    updateMetaTags(lang); // Voláme novú funkciu na aktualizáciu meta tagov
+    originalSetLanguage(lang);
+    updateMetaTags(lang);
 };
 </script>
 
